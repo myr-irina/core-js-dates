@@ -107,8 +107,6 @@ function getCountDaysInMonth(month, year) {
   return new Date(year, month, 0).getDate();
 }
 
-console.log(getCountDaysInMonth(1, 2024));
-
 /**
  * Returns the total number of days between two dates, including both the start and end dates.
  *
