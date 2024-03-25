@@ -92,8 +92,6 @@ function getNextFriday(date) {
   return currentDate;
 }
 
-console.log(getNextFriday('2024-02-03T00:00:00Z'));
-
 /**
  * Returns the number of days in a specified month and year.
  *
@@ -105,9 +103,11 @@ console.log(getNextFriday('2024-02-03T00:00:00Z'));
  * 1, 2024 => 31
  * 2, 2024 => 29
  */
-function getCountDaysInMonth(/* month, year */) {
-  throw new Error('Not implemented');
+function getCountDaysInMonth(month, year) {
+  return new Date(year, month, 0).getDate();
 }
+
+console.log(getCountDaysInMonth(1, 2024));
 
 /**
  * Returns the total number of days between two dates, including both the start and end dates.
